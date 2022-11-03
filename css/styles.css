@@ -302,6 +302,7 @@ body {
 .team-list p {
   line-height: 1.18;
   color: var(--secondary-color);
+  margin-bottom: 16px;
 }
 
 .team-text {
@@ -312,6 +313,30 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+/* соц-мережі наша команда */
+/* net-list */
+
+.net-list {
+  display: flex;
+  justify-content: center;
+}
+
+.net-item {
+  width: 44px;
+  height: 44px;
+}
+
+.net-link {
+  padding: 0;
+  border: none;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.net-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* clients */
@@ -330,28 +355,30 @@ body {
 }
 
 .clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-link {
   padding: 0;
   border: none;
+  fill: rgba(175, 177, 184, 1);
 }
 
 .clients-icon {
   width: 170px;
   height: 92px;
 
-  fill: rgba(175, 177, 184, 1);
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   padding: 16px 32px;
 }
 
 .clients-icon:hover,
 :focus {
-  border-color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.clients-item:hover {
+  border-color: var(--accent-color);
 }
 
 .clients-item:not(:last-child) {
@@ -431,9 +458,6 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
 
 .filter-btn {
   cursor: pointer;
