@@ -20,6 +20,7 @@ img {
   --accent-color: #2196f3;
   --section-color: #f5f5f5;
   --footer-color: #000000;
+  --icon-color: rgba(175, 177, 184, 1);
 }
 
 body {
@@ -108,6 +109,7 @@ body {
   display: flex;
   margin-left: auto;
   padding-right: 15px;
+  align-items: center;
 }
 
 .site-contacts .contacts-item + .contacts-item {
@@ -125,7 +127,7 @@ body {
 
 /* контакты */
 .contacts-link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -138,6 +140,22 @@ body {
 .contacts-link:hover,
 :focus {
   color: var(--accent-color);
+}
+
+.contacts-icon {
+  align-self: center;
+  margin-right: 10px;
+  fill: var(--secondary-color);
+  stroke: currentColor;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
 }
 
 /* hiro */
@@ -204,6 +222,7 @@ body {
 }
 
 /* список преимуществ */
+
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -234,6 +253,26 @@ body {
   color: var(--secondary-color);
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* benefits-SVG */
+
+.wrapper-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* projects */
@@ -326,17 +365,41 @@ body {
 .net-item {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+}
+.net-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.net-item:hover {
+  fill: var(--main-fon-color);
+  background-color: var(--accent-color);
 }
 
 .net-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  font-size: 0px;
   padding: 0;
   border: none;
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icon-color);
+}
+
+.net-link:hover {
+  fill: #ffffff;
 }
 
 .net-icon {
   width: 20px;
   height: 20px;
+}
+
+.net-icon:hover {
+  fill: #ffffff;
 }
 
 /* clients */
@@ -362,7 +425,7 @@ body {
 .clients-link {
   padding: 0;
   border: none;
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icon-color);
 }
 
 .clients-icon {
@@ -372,8 +435,7 @@ body {
   padding: 16px 32px;
 }
 
-.clients-icon:hover,
-:focus {
+.clients-icon:hover {
   fill: var(--accent-color);
 }
 
@@ -424,8 +486,58 @@ body {
   margin-bottom: 9px;
 }
 
+/* footer соц-мережі */
+
+.footer-icons h2 {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer .wrapper {
+  margin-right: 70px;
+}
+
+.footer-icons .net-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: #ffffff;
+}
+
+.net-item:hover {
+  background-color: var(--accent-color);
+}
+
+.net-item:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-list {
+  display: flex;
+}
+
+.net-link:hover {
+  fill: #ffffff;
+}
+
+.net-link:focus {
+  fill: #ffffff;
+}
+
 /* Портфоліо */
 /* section filter */
+
 .filter {
   padding-top: 94px;
   padding-bottom: 94px;
