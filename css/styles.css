@@ -14,7 +14,7 @@ img {
 }
 :root {
   /* color */
-  --primary-color: rgb(33, 33, 33);
+  --primary-color: rgba(33, 33, 33, 1);
   --secondary-color: #757575;
   --main-fon-color: #ffffff;
   --accent-color: #2196f3;
@@ -363,17 +363,16 @@ body {
 }
 
 .net-item {
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
 }
 .net-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.net-item:hover {
+.net-link:focus {
   fill: var(--main-fon-color);
   background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .net-link {
@@ -443,6 +442,10 @@ body {
   border-color: var(--accent-color);
 }
 
+.clients-link:focus {
+  fill: var(--accent-color);
+}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -496,7 +499,7 @@ body {
   color: white;
 
   margin-bottom: 20px;
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .footer .container {
