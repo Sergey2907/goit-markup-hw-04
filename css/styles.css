@@ -161,6 +161,8 @@ body {
 /* hiro */
 
 .hiro {
+  width: 1600px;
+  margin: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -190,20 +192,20 @@ body {
 }
 
 .hiro-button {
-  border-radius: 4px;
-  padding: 10px 32px;
   min-width: 216px;
-
-  background-color: var(--accent-color);
-  color: #ffffff;
-
-  border: 1px solid transparent;
+  padding: 10px 32px;
 
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 /* benefits */
@@ -392,13 +394,15 @@ body {
   fill: #ffffff;
 }
 
+.net-link:focus {
+  fill: #ffffff;
+}
+
+/* net-icon */
+
 .net-icon {
   width: 20px;
   height: 20px;
-}
-
-.net-icon:hover {
-  fill: #ffffff;
 }
 
 /* clients */
@@ -412,33 +416,30 @@ body {
 }
 
 .clients-list {
+  display: inline-flex;
+}
+
+.clients-item {
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  color: var(--icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
 }
 
-.clients-item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
-.clients-link {
-  padding: 0;
-  border: none;
+.clients-icon {
+  width: 106px;
+  height: 100%;
   fill: var(--icon-color);
 }
 
-.clients-icon {
-  width: 170px;
-  height: 92px;
-
-  padding: 16px 32px;
-}
-
-.clients-icon:hover {
+.clients-link:hover {
   fill: var(--accent-color);
-}
-
-.clients-item:hover {
   border-color: var(--accent-color);
 }
 
@@ -468,14 +469,6 @@ body {
 .address-list {
 }
 
-.address-link:hover {
-  color: #ffffff;
-}
-
-.address-link:focus {
-  color: #ffffff;
-}
-
 .address-link {
   color: rgba(255, 255, 255, 0.6);
 
@@ -483,6 +476,14 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address-link:hover {
+  color: #ffffff;
+}
+
+.address-link:focus {
+  color: #ffffff;
 }
 
 .address-item:nth-child(-n + 2) {
@@ -528,14 +529,6 @@ body {
 
 .footer-list {
   display: flex;
-}
-
-.net-link:hover {
-  fill: #ffffff;
-}
-
-.net-link:focus {
-  fill: #ffffff;
 }
 
 /* Портфоліо */
