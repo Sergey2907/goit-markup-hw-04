@@ -587,7 +587,6 @@ body {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
 }
 
 /* work-item */
@@ -596,6 +595,12 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.work-item:hover,
+:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-item:nth-child(3n) {
